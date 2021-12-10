@@ -50,14 +50,18 @@ main{
 }
 .assignments{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     margin: .4rem 1rem;
+    margin-bottom: 1.4rem;
     width: 15rem;
     height: 17rem;
     border-radius: 1rem;
