@@ -27,10 +27,44 @@ function cards (title ,replit, github){
     assignments.innerHTML += card
 }
 
-cards("Exercise Tracker", "https://replit.com/@sintheia100/exercisetracker?v=1", "https://github.com/sintheia100/exercise_tracker")
-cards("File Metadata Microservice","https://replit.com/@sintheia100/filemetadata?v=1", "https://github.com/sintheia100/file_metadata")
-cards("URL Shortner Microservice","https://replit.com/@sintheia100/urlshortner?v=1", "https://github.com/sintheia100/url_shortner" )
-cards("Request Header Parser", "https://replit.com/@sintheia100/requestheaderparser?v=1","https://github.com/sintheia100/request_header_parser")
-cards("Timestamp Microservice", "https://replit.com/@sintheia100/timestamp-microservice?v=1", "https://github.com/sintheia100/timestamp-microservice")
-cards("Mongoose Practice", "https://github.com/sintheia100/sintheia100.github.io/blob/main/mongoose/routes/users.js", "https://github.com/sintheia100/sintheia100.github.io/tree/main/mongoose")
+const params = [
+    {
+    title: "Exercise Tracker",
+    replit: "https://replit.com/@sintheia100/exercisetracker?v=1",
+    github: "https://github.com/sintheia100/exercise_tracker"
+    },
+    {
+        title: "File Metadata Microservice",
+        replit: "https://replit.com/@sintheia100/filemetadata?v=1",
+        github:  "https://github.com/sintheia100/file_metadata"
+    },
+    {
+        title: "URL Shortner Microservice",
+        replit: "https://replit.com/@sintheia100/urlshortner?v=1",
+        github:  "https://github.com/sintheia100/url_shortner"
+    },
+    {
+        title: "Request Header Parser",
+        replit: "https://replit.com/@sintheia100/requestheaderparser?v=1",
+        github:  "https://github.com/sintheia100/request_header_parser"
+    },
+    {
+        title: "Timestamp Microservice",
+        replit: "https://replit.com/@sintheia100/timestamp-microservice?v=1",
+        github:  "https://github.com/sintheia100/timestamp-microservice"
+    },
+    {
+        title: "Mongoose Practice",
+        replit: "https://github.com/sintheia100/sintheia100.github.io/blob/main/mongoose/routes/users.js",
+        github:   "https://github.com/sintheia100/sintheia100.github.io/tree/main/mongoose"
+    },
+    {
+        title: "Weather App",
+        replit: "https://sintheia100.github.io/weather_app/",
+        github:   "https://github.com/sintheia100/weather_app"
+    },
+]
 
+params.map(assignment => {
+    return cards(assignment.title, assignment.replit, assignment.github)
+})
